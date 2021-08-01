@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+
+  color: $color-light;
+
+  font-family: $font-main;
+  font-size: $font-size;
+}
+
+a {
+  text-decoration: none;
+
+  color: $color-light;
+}
