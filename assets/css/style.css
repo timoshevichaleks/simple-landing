@@ -318,3 +318,111 @@ a {
   margin: -10px 0 0 0;
   line-height: 1.5em;
 }
+
+.javascript-background {
+  position: relative;
+  min-height: 100vh;
+  background-image: url(../../assets/img/js.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+.javascript-background__overlay {
+  z-index: 1;
+  min-height: 100vh;
+  background: -o-linear-gradient(320deg, rgba(39, 91, 106, 0.7) 0%, rgba(2, 33, 43, 0.85) 30%, rgba(0, 0, 0, 0.8) 100%);
+  background: linear-gradient(130deg, rgba(39, 91, 106, 0.7) 0%, rgba(2, 33, 43, 0.85) 30%, rgba(0, 0, 0, 0.8) 100%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.javascript-content {
+  position: absolute;
+  z-index: 2;
+  top: 230px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+.javascript-content__title {
+  margin: 0;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-family: "Roboto Slab", serif;
+  font-size: 5rem;
+}
+.javascript-content__title span {
+  font-weight: 300;
+}
+.javascript-content__title strong {
+  padding-left: 20px;
+  font-weight: 900;
+}
+.javascript-content__description {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin-top: 36px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-family: "Roboto Slab", serif;
+  font-size: 3rem;
+  font-weight: 100;
+  row-gap: 5px;
+}
+.javascript-content__description span {
+  display: block;
+}
+.javascript-content__description::after {
+  position: absolute;
+  z-index: 10;
+  bottom: -50px;
+  width: 230px;
+  height: 2px;
+  content: "";
+  background-color: #ffffff;
+}
+.javascript-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1200px;
+  margin-top: 125px;
+  padding: 20px;
+  gap: 70px;
+}
+.javascript-block__image img {
+  width: 200px;
+}
+.javascript-block__text {
+  font-size: 2rem;
+}
+.javascript-block__text p {
+  margin: -10px 0 0 0;
+  line-height: 1.5em;
+}
