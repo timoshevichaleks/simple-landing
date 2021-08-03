@@ -11,8 +11,9 @@
       z-index: 1;
 
       min-height: 100vh;
+      // background-color: rgba(darken($color-secondary-2-4, 12), 0.8);
 
-      background-color: rgba(darken($color-secondary-2-4, 12), 0.8);
+      background: linear-gradient(90deg, rgba($color-secondary-2-2, 0.8) 0%, rgba(darken($color-secondary-2-3, 12), 0.8) 10%, rgba(darken($color-secondary-2-4, 12), 0.8) 100%);
 
       @include abs-position;
     }
