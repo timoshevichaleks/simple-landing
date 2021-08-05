@@ -445,16 +445,16 @@ a {
   left: 0;
 }
 .frontend-container {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   z-index: 2;
   top: 288px;
   max-width: 1200px;
   margin: auto;
   padding: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 .frontend-content {
   display: -webkit-box;
@@ -472,9 +472,9 @@ a {
 .frontend-content__title {
   margin: 0 0 0 25px;
   letter-spacing: 0.1em;
+  text-shadow: 5px 5px 15px #ffffff;
   font-family: "Roboto Slab", serif;
   font-size: 5rem;
-  text-shadow: 5px 5px 15px #ffffff;
 }
 .frontend-content__title span {
   font-weight: 300;
@@ -497,10 +497,10 @@ a {
   margin-left: 389px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  text-shadow: 5px 5px 15px #ffffff;
   font-family: "Roboto Slab", serif;
   font-size: 3rem;
   font-weight: 700;
-  text-shadow: 5px 5px 15px #ffffff;
 }
 .frontend-content__description span {
   display: block;
@@ -510,11 +510,64 @@ a {
   padding: 20px;
 }
 .frontend-block__text {
-  font-size: 2rem;
   max-width: 750px;
   margin-left: 250px;
+  font-size: 2rem;
 }
 .frontend-block__text p {
   margin: 0;
   line-height: 1.5em;
+}
+
+.footer {
+  background-color: #034052;
+  color: #5796a7;
+}
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 100px 20px;
+}
+.footer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+.footer__item {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.footer__link i {
+  color: #5796a7;
+}
+.footer__link:hover, .footer__link:focus {
+  color: #ffffff;
+}
+.footer__copyright {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.footer__copyright p {
+  margin: 0;
 }

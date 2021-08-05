@@ -1,0 +1,40 @@
+.footer {
+  color: $color-secondary-2-1;
+  background-color: $color-secondary-2-4;
+  &-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 100px 20px;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    font-size: 2rem;
+
+    @include unlist;
+  }
+  &__item {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  &__link {
+    i {
+      color: $color-secondary-2-1;
+    }
+    &:hover,
+    &:focus {
+      color: $color-light;
+    }
+  }
+  &__copyright {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    p {
+      margin: 0;
+    }
+  }
+}
