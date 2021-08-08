@@ -4,27 +4,32 @@
     z-index: 100;
     top: 50%;
     right: 0;
-
     transform: translateY(-50%);
+    opacity: 0.5;
     &__list {
       @include unlist;
     }
     &__item {
-      a {
-        display: block;
-
-        padding: 12px 26px 12px 22px;
-
-        text-align: center;
-
-        background-color: rgba($color-secondary-2-1, 0.25);
-
-        font-size: 1.5rem;
-      }
       &.active {
-        a {
+        .header-nav__link {
           background-color: $color-primary-3;
         }
+      }
+    }
+    &__link {
+      background-color: rgba($color-secondary-2-1, 0.25);
+      font-size: 1.5rem;
+      display: block;
+      padding: 12px 24px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: background-color 1s;
+      letter-spacing: 0.1em;
+      font-weight: 100;
+      &:hover,
+      &:focus {
+        opacity: 1;
+        background-color: rgba($color-secondary-2-1, 0.5);
       }
     }
   }

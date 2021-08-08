@@ -9,11 +9,7 @@
   &__list {
     display: flex;
     justify-content: center;
-
-    margin-bottom: 20px;
-
     font-size: 2rem;
-
     @include unlist;
   }
   &__item {
@@ -33,6 +29,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 20px;
     p {
       margin: 0;
     }
