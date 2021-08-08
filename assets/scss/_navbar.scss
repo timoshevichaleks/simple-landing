@@ -4,7 +4,6 @@
     z-index: 100;
     top: 50%;
     right: 0;
-
     transform: translateY(-50%);
     &__list {
       @include unlist;
@@ -12,14 +11,15 @@
     &__item {
       a {
         display: block;
-
         padding: 12px 26px 12px 22px;
-
         text-align: center;
-
         background-color: rgba($color-secondary-2-1, 0.25);
-
         font-size: 1.5rem;
+      }
+      &.active {
+        a {
+          background-color: $color-primary-3;
+        }
       }
     }
   }
