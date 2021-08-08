@@ -1,14 +1,19 @@
 .html {
   &-background {
     position: relative;
+
     min-height: 100vh;
+
     background-image: url(../../assets/img/html5.jpg);
     background-position: center center;
     background-size: cover;
     &__overlay {
       z-index: 1;
+
       min-height: 100vh;
+
       background: linear-gradient(135deg, rgba($color-secondary-2-2, 0.75) 0%, rgba(darken($color-secondary-2-4, 7), 0.9) 30%, rgba(darken($color-secondary-2-4, 15), 0.9) 100%);
+
       @include abs-position;
     }
   }
@@ -16,14 +21,18 @@
     position: absolute;
     z-index: 2;
     top: 230px;
+
     display: flex;
     align-items: center;
     flex-direction: column;
+
     width: 100%;
     &__title {
       margin: 0;
+
       letter-spacing: 0.1em;
       text-transform: uppercase;
+
       font-family: $font-header;
       font-size: 5rem;
       span {
@@ -31,21 +40,27 @@
       }
       strong {
         padding-left: 20px;
+
         font-weight: 900;
       }
     }
     &__description {
       position: relative;
+
       display: flex;
       align-items: center;
       flex-direction: column;
+
       width: 100%;
       margin-top: 36px;
+
       letter-spacing: 0.1em;
       text-transform: uppercase;
+
       font-family: $font-header;
       font-size: 3rem;
       font-weight: 100;
+
       row-gap: 5px;
       span {
         display: block;
@@ -54,18 +69,23 @@
         position: absolute;
         z-index: 10;
         bottom: -50px;
+
         width: 230px;
         height: 2px;
+
         content: "";
+
         background-color: $color-light;
       }
     }
   }
   &-block {
     display: flex;
+
     max-width: 1200px;
     margin-top: 125px;
     padding: 20px;
+
     gap: 70px;
     &__image {
       img {
@@ -76,6 +96,7 @@
       font-size: 2rem;
       p {
         margin: -10px 0 0 0;
+
         line-height: 1.5em;
       }
     }

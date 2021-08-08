@@ -221,9 +221,8 @@ a {
 .css-background__overlay {
   z-index: 1;
   min-height: 100vh;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(216, 121, 24, 0.7)), to(rgba(255, 255, 255, 0.9)));
-  background: -o-linear-gradient(left, rgba(216, 121, 24, 0.7) 0%, rgba(255, 255, 255, 0.9) 100%);
-  background: linear-gradient(90deg, rgba(216, 121, 24, 0.7) 0%, rgba(255, 255, 255, 0.9) 100%);
+  background: -o-linear-gradient(315deg, rgba(255, 192, 128, 0.9) 0%, rgba(255, 255, 255, 0.9) 70%);
+  background: linear-gradient(135deg, rgba(255, 192, 128, 0.9) 0%, rgba(255, 255, 255, 0.9) 70%);
   position: absolute;
   top: 0;
   right: 0;
@@ -331,8 +330,8 @@ a {
 .javascript-background__overlay {
   z-index: 1;
   min-height: 100vh;
-  background: -o-linear-gradient(320deg, rgba(39, 91, 106, 0.7) 0%, rgba(2, 33, 43, 0.85) 30%, rgba(0, 0, 0, 0.8) 100%);
-  background: linear-gradient(130deg, rgba(39, 91, 106, 0.7) 0%, rgba(2, 33, 43, 0.85) 30%, rgba(0, 0, 0, 0.8) 100%);
+  background: -o-linear-gradient(315deg, rgba(87, 150, 167, 0.5) 0%, rgba(2, 37, 48, 0.85) 30%, rgba(0, 0, 0, 0.9) 100%);
+  background: linear-gradient(135deg, rgba(87, 150, 167, 0.5) 0%, rgba(2, 37, 48, 0.85) 30%, rgba(0, 0, 0, 0.9) 100%);
   position: absolute;
   top: 0;
   right: 0;
@@ -438,8 +437,8 @@ a {
 .frontend-background__overlay {
   z-index: 1;
   min-height: 100vh;
-  background: -o-linear-gradient(320deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.4) 60%, rgba(255, 216, 210, 0.8) 100%);
-  background: linear-gradient(130deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.4) 60%, rgba(255, 216, 210, 0.8) 100%);
+  background: -o-linear-gradient(315deg, rgba(255, 255, 255, 0.4) 50%, rgba(255, 192, 128, 0.4) 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 50%, rgba(255, 192, 128, 0.4) 100%);
   position: absolute;
   top: 0;
   right: 0;
@@ -447,15 +446,15 @@ a {
   left: 0;
 }
 .frontend-container {
+  position: absolute;
   z-index: 2;
   top: 288px;
+  right: 0;
+  bottom: 0;
+  left: 0;
   max-width: 1200px;
   margin: auto;
   padding: 20px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
 }
 .frontend-content {
   display: -webkit-box;
