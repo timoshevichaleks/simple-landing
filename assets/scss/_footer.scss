@@ -4,7 +4,7 @@
   &-container {
     max-width: 1200px;
     margin: auto;
-    padding: 100px 20px;
+    padding: (5 * $gap) $gap;
   }
   &__list {
     display: flex;
@@ -15,16 +15,18 @@
     @include unlist;
   }
   &__item {
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: math.div($gap, 2);
+    margin-left: math.div($gap, 2);
   }
   &__link {
     i {
+      transition: 0.3s;
+
       color: $color-secondary-2-1;
-    }
-    &:hover,
-    &:focus {
-      color: $color-light;
+      &:hover,
+      &:focus {
+        color: $color-light;
+      }
     }
   }
   &__copyright {
@@ -32,7 +34,7 @@
     align-items: center;
     flex-direction: column;
 
-    margin-top: 20px;
+    margin-top: $gap;
     p {
       margin: 0;
     }

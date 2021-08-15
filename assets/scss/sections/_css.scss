@@ -20,7 +20,7 @@
   &-content {
     position: absolute;
     z-index: 2;
-    top: 230px;
+    top: 10.25rem;
 
     display: flex;
     align-items: center;
@@ -41,7 +41,7 @@
         font-weight: 300;
       }
       strong {
-        padding-left: 20px;
+        padding-left: $gap;
 
         font-weight: 900;
       }
@@ -54,7 +54,7 @@
       flex-direction: column;
 
       width: 100%;
-      margin-top: 36px;
+      margin-top: (1.7 * $gap);
 
       letter-spacing: 0.1em;
       text-transform: uppercase;
@@ -70,10 +70,10 @@
       &::after {
         position: absolute;
         z-index: 10;
-        bottom: -50px;
+        bottom: -(2.55 * $gap);
 
-        width: 230px;
-        height: 2px;
+        width: (11.6 * $gap);
+        height: 3px;
 
         content: "";
 
@@ -85,10 +85,10 @@
     display: flex;
 
     max-width: 1200px;
-    margin-top: 125px;
-    padding: 20px;
+    margin-top: (6.35 * $gap);
+    padding: $gap;
 
-    gap: 70px;
+    gap: (3.5 * $gap);
     &__image {
       img {
         width: 200px;

@@ -19,14 +19,14 @@
   &-container {
     position: absolute;
     z-index: 2;
-    top: 288px;
+    top: (11.1 * $gap);
     right: 0;
     bottom: 0;
     left: 0;
 
     max-width: 1200px;
     margin: auto;
-    padding: 20px;
+    padding: $gap;
   }
   &-content {
     display: flex;
@@ -36,23 +36,20 @@
 
     color: $color-secondary-2-4;
     &__title {
-      margin: 0 0 0 25px;
+      margin: 0 0 0 (1.25 * $gap);
 
       letter-spacing: 0.1em;
+      text-transform: uppercase;
 
-      text-shadow: 5px 5px 15px $color-light;
+      text-shadow: 5px 5px 15px $color-light, 0 0 30px $color-light;
 
       font-family: $font-header;
       font-size: 5rem;
-      span {
-        font-weight: 300;
-      }
-      span:nth-of-type(3) {
-        text-transform: uppercase;
+      font-weight: 300;
+      span:nth-of-type(1) {
+        font-size: 4rem;
       }
       strong {
-        text-transform: uppercase;
-
         font-weight: 900;
       }
     }
@@ -62,13 +59,13 @@
       display: flex;
 
       width: 100%;
-      margin-top: 36px;
-      margin-left: 389px;
+      margin-top: (1.7 * $gap);
+      margin-left: (19.4 * $gap);
 
       letter-spacing: 0.1em;
       text-transform: uppercase;
 
-      text-shadow: 5px 5px 15px $color-light;
+      text-shadow: 5px 5px 15px $color-light, 0 0 30px $color-light;
 
       font-family: $font-header;
       font-size: 3rem;
@@ -79,11 +76,13 @@
     }
   }
   &-block {
-    margin-top: 155px;
-    padding: 20px;
+    margin-top: (7.9 * $gap);
+    padding: $gap;
     &__text {
       max-width: 750px;
-      margin-left: 250px;
+      margin-left: (12.5 * $gap);
+
+      text-shadow: 5px 5px 15px $color-light, 0 0 30px $color-light;
 
       font-size: 2rem;
       p {
